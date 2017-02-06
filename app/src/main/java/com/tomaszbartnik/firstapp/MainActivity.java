@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -41,4 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 Toast.LENGTH_LONG).show();*/
     }
 
+    public void onClickButton2 (View view) {
+        ImageView imageView = (ImageView) findViewById(R.id.myicon);
+        imageView.setImageResource(R.drawable.ic_tethering);
+    }
+    public void onClickButton3 (View view) {
+        ImageView imageView = (ImageView) findViewById(R.id.myicon);
+        imageView.setImageResource(R.drawable.ic_offline);
+    }
 }
